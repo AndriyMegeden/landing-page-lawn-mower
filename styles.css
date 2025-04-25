@@ -1,0 +1,366 @@
+html {
+  scroll-behavior: smooth;
+}
+/* font family */
+@font-face {
+  font-family: "JostBold";
+  src: url("fonts/Jost-Bold.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "JostRegular";
+  src: url("fonts/Jost-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "JostRegular", sans-serif;
+  text-wrap: balance;
+  background-color: gray;
+}
+
+/* global text */
+.small_text {
+  font-size: 13px;
+  color: black;
+  line-height: 1.5em;
+  font-weight: 400;
+}
+.normal_text {
+  font-size: 17px;
+  color: black;
+  line-height: 1.5em;
+  font-weight: 400;
+}
+.big_text {
+  font-size: 24px;
+  color: black;
+  line-height: 1.5em;
+  font-weight: 400;
+}
+@media (max-width: 400px) {
+  .small_text {
+    font-size: 11px;
+  }
+  .normal_text {
+    font-size: 13px;
+  }
+  .big_text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 576px) {
+  .header {
+    width: 100% !important;
+  }
+  .bottom-panel {
+    width: 100% !important;
+  }
+}
+/*  */
+
+.wrapper {
+  width: 576px;
+  background-color: white;
+}
+.header {
+  z-index: 100;
+  min-height: 40px;
+  background-color: white;
+  width: 576px;
+  margin: 0 auto;
+}
+
+ul {
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+ul li {
+  border-bottom: 4px solid transparent;
+  font-family: "JostBold";
+}
+
+.main img {
+  width: 100%;
+  object-fit: contain;
+}
+.main .price {
+  height: 75px;
+  background: #0030780a;
+}
+.sale-block {
+  height: 100%;
+  line-height: 1.5em;
+  border-right: 1px solid #e4e4e4;
+  width: calc(50% - 1px) !important;
+}
+
+.sale-block .sale {
+  background: #ff0013;
+  color: white;
+  font-family: "JostBold";
+}
+
+.price .final-block {
+  width: 50%;
+  color: #005bff;
+  font-family: "JostBold";
+}
+
+.about-product .item {
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg) translate(0, -50%);
+  background: #363636;
+}
+
+button {
+  font-family: "JostBold";
+}
+
+.btn-block button {
+  color: white;
+  width: 100%;
+  height: 65px;
+  border: none;
+  background: linear-gradient(225deg, #1ba6ad 0%, #0e585b 100%);
+}
+.btn-block .text span {
+  background: #de967e;
+  color: white;
+  font-family: "JostBold";
+}
+
+.video-block .title {
+  font-family: "JostBold";
+}
+
+.video-block .video iframe {
+  width: 100%;
+  max-width: 576px;
+  min-height: 220px;
+}
+
+.part .title {
+  font-family: "JostBold";
+}
+
+.part li .item {
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg) translate(0, -50%);
+  border: 2px solid, #363636;
+  background: white;
+}
+.part li span {
+  font-family: "JostRegular";
+}
+
+.feedback {
+  background: #0030780a;
+}
+.feedback .subtitle {
+  color: #de967e;
+  border: 1px solid #de967e;
+  flex-wrap: nowrap;
+  align-content: center;
+}
+.feedback .subtitle::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 97.5%;
+  z-index: 0;
+  opacity: 0.2;
+  background: linear-gradient(225deg, #1ba6ad 0%, #0e585b 100%);
+}
+.feedback .subtitle p {
+  color: #de967e;
+  z-index: 1;
+}
+
+
+.reviews-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.reviews-slider .slider-btn {
+  border-radius: 40px 0 0 40px;
+  background: linear-gradient(225deg, #1ba6ad 0%, #0e585b 100%);
+  border: none;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.slide {
+  min-width: 100%;
+  flex-shrink: 0;
+}
+.reviews-slider .prev-btn {
+  left: 0;
+  border-radius: 0 40px 40px 0;
+}
+.prev-btn img{
+  transform: rotate(180deg);
+}
+.reviews-slider .next-btn {
+  right: 0;
+  border-radius: 40px 0 0 40px;
+}
+.slider-btn img{
+  width: 40px;
+}
+
+.bottom-panel {
+  z-index: 50;
+  bottom: 0;
+  height: 115px;
+  background: #f6f7fa;
+  width: 576px;
+  margin: 0 auto;
+}
+
+.bottom-panel .text .sale {
+  background: #ff0013;
+  color: white;
+  font-family: "JostBold";
+}
+
+.text .new-price {
+  font-family: "JostBold";
+}
+
+.timer-wrap button {
+  color: white;
+  font-family: "JostBold";
+  width: 130px;
+  border: none;
+  background: linear-gradient(225deg, #1ba6ad 0%, #0e585b 100%);
+}
+
+.order-block {
+  min-height: 440px;
+}
+
+.order-block .title {
+  font-family: "JostBold";
+}
+
+.order-list::before {
+  content: "";
+  width: 3px;
+  height: calc(100% - 1.5rem);
+  position: absolute;
+  top: 10px;
+  left: 29px;
+  background-color: #f6f7fa;
+  z-index: 0;
+}
+
+.order-item .circle {
+  z-index: 5;
+  min-width: 60px;
+  height: 60px;
+  background-color: #de967e;
+  color: white;
+  font-family: "JostBold";
+}
+
+.text .subtitle {
+  font-family: "JostBold";
+}
+
+.text .order-subscription {
+  max-width: 350px;
+}
+
+.timer {
+  background: linear-gradient(225deg, #1ba6ad 0%, #0e585b 100%);
+  color: white;
+}
+.timer p {
+  font-family: "JostBold";
+  color: white;
+  line-height: 1.1em;
+}
+
+.timer .timer_block {
+  font-family: "JostBold";
+}
+.timer .timer_block::after {
+  content: ":";
+  font-weight: 700;
+  font-size: 26px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  right: -18px;
+  transform: translate(0, -50%);
+}
+.timer .timer_block:last-child::after {
+  content: none;
+}
+.timer .timer_block .count {
+  color: white;
+}
+.timer .timer_block .text {
+  color: white;
+  line-height: 10px;
+}
+
+.form-style-1 input {
+  background: #f6f7fa;
+  border: 1px solid #000000;
+  font-size: 18px;
+}
+.form-style-1 input::placeholder {
+  color: black;
+  opacity: 1;
+  font-family: "JostRegular";
+}
+
+.footer-style-1 {
+  background: #d1d1d1;
+  padding: 20px 20px 130px;
+}
+
+.footer-style-1 a {
+  color: black;
+}
+.timer-wrap .timer_bottom {
+  padding: 0px;
+  background: none;
+}
+.timer-wrap .timer_bottom .count {
+  color: black;
+  font-weight: 100;
+}
+
+.timer_bottom .timer_block::after {
+  font-size: 12px;
+  color: black;
+  top: 45%;
+  right: -14px;
+  transform: translate(0, -50%);
+}
