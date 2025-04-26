@@ -140,11 +140,24 @@ parts.forEach((part) => {
 
 // for video
 function playVideo() {
-  document.querySelector(".video-thumbnail").style.display = "none";
-  document.querySelector("#video-frame").style.display = "block";
-  document.getElementById('video-container').innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/Yr4OxfeMx78" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
-}
+  const container = document.getElementById('video-container');
 
+  // Прибираємо прев'юшку
+  container.querySelector('.video-thumbnail').style.display = 'none';
+
+  // Створюємо iframe
+  const iframe = document.createElement('iframe');
+  iframe.setAttribute('src', 'https://www.youtube-nocookie.com/embed/Yr4OxfeMx78?autoplay=1');
+  iframe.setAttribute('title', 'YouTube video player');
+  iframe.setAttribute('frameborder', '0');
+  iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+  iframe.setAttribute('allowfullscreen', '');
+  iframe.setAttribute('class', 'w-100 p-20 p-t-0 sm-p-lr-15');
+  iframe.setAttribute('loading', 'lazy'); // важливо для лейзі лоадінгу!
+
+  // Додаємо iframe в контейнер
+  container.appendChild(iframe);
+}
 
 // timer
 function updateCountdown() {
