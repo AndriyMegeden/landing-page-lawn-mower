@@ -178,8 +178,8 @@
           </p>
         </div>
         <div class="reviews-slider">
-          <button class="slider-btn prev-btn d-flex p-10">
-            <img src="/img/arrow.svg" alt="" />
+          <button aria-label="prev" class="slider-btn prev-btn d-flex p-10">
+            <img src="/img/arrow.svg" alt="попередня" />
           </button>
           <div class="slider">
             <div class="slide w-100">
@@ -189,8 +189,8 @@
               <img class="w-100" src="/img/slides/slide2.svg" alt="Слайд 2" />
             </div>
           </div>
-          <button class="slider-btn next-btn d-flex p-10">
-            <img src="/img/arrow.svg" alt="" />
+          <button aria-label="next" class="slider-btn next-btn d-flex p-10">
+            <img src="/img/arrow.svg" alt="наступна" />
           </button>
         </div>
       </section>
@@ -414,9 +414,11 @@
           <span class="new-price big_text">1249 грн</span>
         </div>
         <div class="timer-wrap d-flex justify-space-between flex-d-col m-r-20">
-          <button class="uppercase big_text p-tb-20">
-            <a class="a" href="#buy-4"> Купити </a>
-          </button>
+          <a class="a" href="#buy-4">
+            <button class="uppercase big_text p-tb-20">
+              Купити 
+            </button>
+          </a>
           <div class="timer timer_bottom">
             <div class="timer_container d-flex justify-space-arround">
               <div class="timer_block m-lr-0 p-relative f-sz-20">
