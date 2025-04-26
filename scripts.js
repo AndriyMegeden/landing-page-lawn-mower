@@ -130,7 +130,7 @@ parts.forEach((part) => {
   characteristics.innerHTML += `
       <div class="part p-20 p-b-0 sm-p-lr-15">
         <img class="w-100" src="${part.img}" alt="${part.title}">
-        <div class="title m-tb-20 d-flex justify-center align-center uppercase big_text">${part.title}</div>
+        <div class="title m-tb-20 d-flex justify-center align-center uppercase big_text"><h2>${part.title}</h2></div>
         <ul>
           ${itemsHTML}
         </ul>

@@ -25,6 +25,9 @@
 .gap-20 {
   gap: 20px;
 }
+h2 {
+  all: unset;
+}
 
 .font_normal {
   font-family: "JostRegular" !important;
