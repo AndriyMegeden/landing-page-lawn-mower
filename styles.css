@@ -90,6 +90,8 @@ ul li {
 }
 
 .main img {
+  max-width: 576px;
+  height: auto;
   width: 100%;
   object-fit: contain;
 }

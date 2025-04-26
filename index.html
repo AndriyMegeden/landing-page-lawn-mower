@@ -15,6 +15,7 @@
       name="description"
       content="Знижка -45%! Купуйте акумуляторну газонокосарку 1500 Вт для вашого саду. Доставка по всій Україні 🚚. Київ, вул. Зарічна 12. 📞 Телефон: +38 068 886 75 09."
     />
+    <link rel="preload" href="/img/main.webp" as="image">
     <link rel="canonical" href="https://site.com/gazonokosarka-1500-wt" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="bootstrap.css" />
@@ -62,9 +63,11 @@
       </div>
       <div id="about" class="main">
         <img
+          rel="preload"
           class="p-t-40"
           src="/img/main.webp"
           alt="Акумуляторна газонокосарка"
+          loading="lazy"
         />
         <div class="price border-radius-8 d-flex m-10">
           <div
@@ -129,13 +132,14 @@
         >
           <h2>Вiдео</h2>
         </div>
-        <div class="video">
+        <div id="video-container" class="video">
           <div class="video-thumbnail" onclick="playVideo()">
             <img
               class="w-100 p-20 p-t-0 sm-p-lr-15"
               src="/img/preview.svg"
               alt="Video Thumbnail"
               class="video-thumb"
+              loading="lazy"
             />
             <div class="play-button"></div>
           </div>
@@ -179,18 +183,18 @@
         </div>
         <div class="reviews-slider">
           <button aria-label="prev" class="slider-btn prev-btn d-flex p-10">
-            <img src="/img/arrow.svg" alt="попередня" />
+            <img src="/img/arrow.svg" alt="попередня" loading="lazy" />
           </button>
           <div class="slider">
             <div class="slide w-100">
-              <img class="w-100" src="/img/slides/slide1.svg" alt="Слайд 1" />
+              <img class="w-100" src="/img/slides/slide1.svg" alt="Слайд 1" loading="lazy"/>
             </div>
             <div class="slide w-100">
-              <img class="w-100" src="/img/slides/slide2.svg" alt="Слайд 2" />
+              <img class="w-100" src="/img/slides/slide2.svg" alt="Слайд 2" loading="lazy"/>
             </div>
           </div>
           <button aria-label="next" class="slider-btn next-btn d-flex p-10">
-            <img src="/img/arrow.svg" alt="наступна" />
+            <img src="/img/arrow.svg" alt="наступна" loading="lazy" />
           </button>
         </div>
       </section>
@@ -257,7 +261,7 @@
         </div>
       </div>
       <div class="main">
-        <img src="/img/main.webp" alt="Акумуляторна газонокосарка" />
+        <img src="/img/main.webp" alt="Акумуляторна газонокосарка" loading="lazy" />
         <div class="price border-radius-8 d-flex m-10">
           <div
             class="sale-block p-10 d-flex flex-d-col justify-center align-center"
