@@ -74,7 +74,7 @@ blocks.forEach((block) => {
       <div class="product-block p-lr-20 d-flex flex-d-col align-center">
              <p class="m-b-10 t-center normal_text font_normal">${block.description1}</p>
              <p class="m-b-10 t-center normal_text font_normal">${block.description2}</p>
-        <img class="m-tb-10 border-radius-8 w-100" src="${block.img}" alt="${block.title} loading="lazy"">
+        <img class="m-tb-10 border-radius-8 w-100" src="${block.img}" alt="${block.title}" loading="lazy">
       </div>
     `;
 });
@@ -129,7 +129,7 @@ parts.forEach((part) => {
 
   characteristics.innerHTML += `
       <div class="part p-20 p-b-0 sm-p-lr-15">
-        <img class="w-100" src="${part.img}" alt="${part.title} loading="lazy"">
+        <img class="w-100" src="${part.img}" alt="${part.title}" loading="lazy">
         <div class="title m-tb-20 d-flex justify-center align-center uppercase big_text"><h2>${part.title}</h2></div>
         <ul>
           ${itemsHTML}
